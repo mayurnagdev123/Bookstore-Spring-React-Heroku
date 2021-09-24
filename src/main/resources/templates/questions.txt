@@ -1,0 +1,32 @@
+   SpringApplication.run(TechtalkApplication.class, args); 
+/**
+ * From the run method, the main application context is kicked off which in turn
+ * searches for the classes annotated with @Configuration, initializes all the
+ * declared beans in those configuration classes, and based upon the scope of
+ * those beans, stores those beans in JVM, specifically in a space inside JVM
+ * which is known as IOC container. After the creation of all the beans,
+ * automatically configures the dispatcher servlet and registers the default
+ * handler mappings, messageConverts, and all other basic things.
+ */
+(Also, all the security settings that we configure in WebSecurityConfig class are called once at runtime)
+
+Autowired is annotation based dependency injection
+@Component
+public class FooService {  
+    @Autowired
+    private FooFormatter fooFormatter;
+}
+As a result, Spring injects fooFormatter when FooService is created.
+Similarly we can inject FooFormatter in FooService in a setter method or in a constructor
+public class FooService {
+    private FooFormatter fooFormatter;
+    @Autowired
+    public void setFooFormatter(FooFormatter fooFormatter) { //FooFormatter is injected here
+        this.fooFormatter = fooFormatter;
+    }
+}
+145) Similarly, consider injecting userRepository into userService or injecting an interface in a class and using it directly.
+eg: @Autowired UserDetailsService service;
+//service.loadByUsername()
+
+//this will do UserDetailsService service= new UserDetailsServiceImpl(); and the loadByUsername in UserDetailsServiceImpl will be called

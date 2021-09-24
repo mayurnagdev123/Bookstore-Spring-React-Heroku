@@ -1,0 +1,81 @@
+.deleteBin {
+    position: relative;
+    cursor: pointer;
+    color: royalblue;
+}
+
+.fa-deleteBin {
+    color: royalblue;
+}
+
+.deleteBin::before {
+    font-family: FontAwesome;
+    top: 0;
+    left: -5px;
+    font-size: 24px;
+    padding-right: 9px;
+    content: "\f2ed";
+}
+
+.itemCard {
+    padding: 30px;
+    margin: 50px;
+    z-index: 10;
+    box-sizing: border-box;
+    box-shadow: 5px 8px 8px 4px #888888
+}
+
+.cartCoverImage {
+    width: 120px;
+}
+
+.cartBookTitle {
+    font-size: 24px;
+}
+
+.cartBookAuthor {
+    font-size: 18px;
+}
+
+.cartBookPrice {
+    font-size: 24px;
+}
+
+.cartItemTotalPrice {
+    font-size: 24px;
+}
+
+.trashIcon {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:768px) {
+    .itemCard {
+        padding: 23px 0px;
+        margin: 1px;
+    }
+    .cartCoverImage {
+        width: 70px;
+    }
+    .cartBookTitle {
+        font-size: 15px;
+    }
+    .cartBookAuthor {
+        font-size: 11px;
+    }
+    .cartBookPrice {
+        font-size: 11px;
+    }
+    .cartItemTotalPrice {
+        font-size: 13px;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+    }
+    .trashIcon {
+        font-size: 22px;
+        padding: 10px;
+        text-align: center;
+    }
+}

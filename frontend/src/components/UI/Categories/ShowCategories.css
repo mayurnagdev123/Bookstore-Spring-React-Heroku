@@ -1,0 +1,55 @@
+.imagePic {
+    padding: 2px;
+    height: 85%;
+    width: 100%;
+}
+
+.parentDivShowCategories {
+    padding: 0px;
+    display: flex;
+    margin: 0px 90px;
+    white-space: nowrap;
+}
+
+.mobileMargin {}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .parentDivShowCategories {
+        margin: 0px 10px;
+        display: block;
+    }
+    .mobileMargin {
+        margin-bottom: 7px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width:1080px) {
+    .parentDivShowCategories {
+        margin: 0px 30px;
+        display: block;
+    }
+}
+
+.childLink {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.childLink:hover {
+    text-decoration: none !important;
+    color: white;
+}
+
+.centeredText {
+    position: absolute;
+    top: 40%;
+    line-height: 1.25;
+    width: 90%;
+    margin-left: 2px;
+    padding: 1px;
+    background-color: rgb(0, 0, 0, 0.35);
+    text-transform: uppercase;
+    font-size: 2.25rem;
+}

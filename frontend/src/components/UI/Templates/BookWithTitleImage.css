@@ -1,0 +1,90 @@
+/* quick reset and base styles */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+} */
+
+/* relevant styles */
+
+.imgSize {
+    padding-right: 20px;
+    width: 220px;
+    height: 256px;
+}
+
+.bookTitle {
+    padding-right: 20px;
+    color: black;
+    font-weight: bold;
+    width: 220px;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+@media only screen and (max-width:768px) {
+    .imgSize {
+        width: 170px;
+    }
+    .bookTitle {
+        width: 170px;
+    }
+}
+
+.img__wrap {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+@media only screen and (max-width:768px) {
+    .img__wrap {
+        margin-bottom: 10px;
+    }
+}
+
+.img__img {
+    vertical-align: bottom;
+}
+
+.img__description_layer {
+    position: absolute;
+    width: 100%;
+    margin: 0px auto;
+    top: -4rem;
+    bottom: 0;
+    height: 100%;
+    /* left: 0; */
+    left: -8rem;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition effect. not necessary */
+    transition: visibility 2s;
+}
+
+@media only screen and (max-width:768px) {
+    .img__description_layer {
+        top: -1rem;
+    }
+}
+
+.img__wrap:hover .img__description_layer {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img__description {
+    transition: .2s;
+    transform: translateY(1em);
+    text-align: center;
+}
+
+.img__wrap:hover .img__description {
+    transform: translateY(0);
+}

@@ -1,0 +1,13 @@
+.similarText {
+    color: #616161;
+    text-transform: capitalize;
+    font-size: 23px;
+    margin-bottom: 25px;
+    font-weight: 750
+}
+
+@media only screen and (max-width:768px) {
+    .similarText {
+        font-size: 21px;
+    }
+}

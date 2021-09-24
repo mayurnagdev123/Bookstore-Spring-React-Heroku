@@ -1,0 +1,12 @@
+.genreTitle {
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #616161;
+    line-height: 1.28;
+}
+
+@media only screen and (max-width:768px) {
+    .genreTitle {
+        font-size: 1.5em;
+    }
+}

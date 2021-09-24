@@ -1,0 +1,56 @@
+/*
+copied styles
+*/
+
+.row__poster {
+    max-height: 30rem;
+    object-fit: contain;
+    margin-right: 1.5rem;
+    transition: transform 0.3s;
+    opacity: 0.9;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.scroll__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 4rem;
+    height: 30rem;
+    z-index: 2;
+    background-color: #616161;
+    top: 7%;
+    cursor: pointer;
+}
+
+.row:hover .scroll__button {
+    opacity: 1;
+}
+
+.left__button {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    left: 0;
+}
+
+.right__button {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    right: 0;
+}
+
+/*
+end of copied styles
+*/
+
+.similarImage {
+    min-width: 16.67%;
+}
+
+@media only screen and (max-width:768px) {
+    .similarImage {
+        min-width: 60%;
+    }
+}

@@ -1,0 +1,30 @@
+.orderCard {
+    padding: 30px;
+    margin: 50px;
+    z-index: 10;
+    box-sizing: border-box;
+    box-shadow: 5px 8px 8px 4px #888888
+}
+
+.showOrdersText {
+    color: #616161;
+    font-weight: 500;
+    /* margin: 15px 0 15px 0px; */
+    font-size: 18px;
+}
+
+.showOrdersSubheading {
+    font-weight: bold;
+    color: #17a288;
+}
+
+@media only screen and (max-width:768px) {
+    .orderCard {
+        padding: 8px;
+        border-radius: 10px;
+        margin: 30px 1px;
+    }
+    .showOrdersText {
+        font-size: 13px;
+    }
+}

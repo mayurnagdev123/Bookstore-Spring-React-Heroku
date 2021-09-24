@@ -1,0 +1,60 @@
+.titleHeading {
+    color: #616161;
+    line-height: 1;
+    font-weight: 700;
+    font-family: 'Century Gothic';
+    font-size: 36px;
+}
+
+.authorText {
+    color: #17a288;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 6px 0px 10px 0px;
+}
+
+.bookDescription {
+    color: #616161;
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 26px;
+    font-family: Helvetica;
+}
+
+.addToCartButton {
+    background-color: #17a288;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    margin: 35px 0px 2px 0px;
+    font-weight: bold;
+}
+
+.addToCartButton:hover {
+    text-decoration: none;
+    color: white !important;
+    cursor: pointer;
+}
+
+.writtenByText {
+    font-size: 17px;
+}
+
+@media only screen and (max-width:768px) {
+    .titleHeading {
+        font-size: 24px;
+    }
+    .authorText {
+        font-size: 13px;
+    }
+    .writtenByText {
+        font-size: 14px;
+    }
+    .addToCartButton {
+        padding: 6px;
+        font-size: 15px;
+    }
+    .bookDescription {
+        font-size: 14px;
+    }
+}

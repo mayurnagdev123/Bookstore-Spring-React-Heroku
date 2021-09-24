@@ -1,0 +1,51 @@
+.placeOrderBtn {
+    background-color: rgb(23, 162, 136);
+    color: white;
+    font-size: 1.7rem;
+}
+
+.placeOrderBtn:hover, .placeOrderBtn:focus {
+    color: white;
+}
+
+.orderHeading {
+    font-size: 2.3rem;
+}
+
+.placeOrderCard {
+    padding: 30px;
+    margin: 50px;
+    z-index: 10;
+    box-sizing: border-box;
+    box-shadow: 5px 8px 8px 4px #888888
+}
+
+label {
+    font-size: 14px;
+}
+
+.placeOrderInput {
+    font-size: 14px;
+}
+
+@media only screen and (max-width:768px) {
+    .placeOrderCard {
+        padding: 15px;
+        margin: 11px;
+        height: 500px;
+        overflow-y: scroll;
+        border-radius: 10px;
+    }
+    .orderHeading {
+        font-size: 1.5rem;
+    }
+    .placeOrderBtn {
+        font-size: 1.3rem;
+    }
+    label {
+        font-size: 11px;
+    }
+    .placeOrderInput {
+        font-size: 11px;
+    }
+}

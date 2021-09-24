@@ -1,0 +1,21 @@
+.hocDiv {
+    color: #616161;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 750;
+    margin-top: 10px;
+}
+
+.parentHocDiv {
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .parentHocDiv {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

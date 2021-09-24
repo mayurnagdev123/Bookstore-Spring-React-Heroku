@@ -1,0 +1,103 @@
+.modalStyle {
+    background-color: white;
+    position: fixed;
+    z-index: 20;
+    width: 100px;
+    margin: auto;
+    left: 35%;
+    top: 6%;
+    box-shadow: 10px 10px 5px 6px #8888;
+    width: 30%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.loginModal {
+    padding: 30px 70px;
+}
+
+.signupModal {
+    padding: 10px 70px
+}
+
+.book_icon_login {
+    color: #ff6e54;
+    font-size: 2.5em;
+    position: relative;
+}
+
+.loginHeading {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: #555;
+}
+
+.modalSignupMargin {
+    margin-top: 3rem;
+}
+
+@media only screen and (max-width:768px) {
+    .modalStyle {
+        width: 80%;
+        left: 10%;
+        top: 3%;
+        height: 450px;
+    }
+    .modalSignupMargin {
+        margin-top: 1rem;
+    }
+    .loginHeading {
+        margin-top: 0px;
+        font-size: 24px;
+    }
+    .loginModal {
+        padding: 10px 17px
+    }
+    .signupModal {
+        padding: 0px 17px
+    }
+    .book_icon_login {
+        font-size: 1.5em;
+    }
+}
+
+.loginSubHeading {
+    text-align: center;
+    color: #555;
+}
+
+.book_icon_login::before {
+    font-family: FontAwesome;
+    margin: 40%;
+    font-size: 4.5rem;
+    content: "\f02d";
+}
+
+.signupBtn {
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #ff7854 0, #ff5079 100%);
+    letter-spacing: 1px;
+}
+
+.signupBtn:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.responseLabelSuccess {
+    color: #17a288;
+    display: block !important;
+}
+
+.responseLabelError {
+    color: #ff6e54;
+    display: block !important;
+}
+
+.invalidField {
+    box-shadow: 0 0 5px 1px #ff6e54;
+}

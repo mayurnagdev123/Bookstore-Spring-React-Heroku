@@ -1,0 +1,37 @@
+.quantityBtn {
+    font-weight: bold;
+    background-color: rgb(23, 162, 136);
+    color: white;
+    height: 50px;
+    width: 50px;
+    outline: none;
+}
+
+.quantityBtn:hover, .quantityBtn:focus {
+    color: white;
+    outline: none;
+}
+
+.quantityText {
+    color: #616161;
+    line-height: 1;
+    font-weight: 700;
+    font-family: 'Century Gothic';
+    font-size: 17px;
+    padding: 20px;
+}
+
+.quantityAlignment {
+    text-align: center;
+    padding: 15px;
+}
+
+@media only screen and (max-width:768px) {
+    .quantityBtn {
+        height: 38px;
+        width: 38px;
+    }
+    .quantityText {
+        font-size: 13px;
+    }
+}
