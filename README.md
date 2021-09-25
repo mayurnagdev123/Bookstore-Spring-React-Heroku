@@ -11,7 +11,11 @@ loop by enabling hot reload. That way, you can just save your files, and changes
 the browser. 
 
 To run the application:
+
 1)Download the code on your local 
+
 2)In the location of pom.xml, open Command Prompt
+
 3)Run this command : mvn install
+
 4)Navigate to the target folder, and run this command: java -jar bookstore-1.0.0.jar
