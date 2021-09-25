@@ -14,8 +14,10 @@ To run the application:
 
 1)Download the code on your local 
 
-2)In the location of pom.xml, open Command Prompt
+2)Update application.properties with postgres credentials
 
-3)Run this command : mvn install
+3)In the location of pom.xml, open Command Prompt
 
-4)Navigate to the target folder, and run this command: java -jar bookstore-1.0.0.jar
+4)Run this command : mvn install
+
+5)Navigate to the target folder, and run this command: java -jar bookstore-1.0.0.jar
