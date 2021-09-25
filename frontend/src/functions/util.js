@@ -240,7 +240,7 @@ function isTokenExpired() {
     if (checkRequisiteItemsInLocalStorage()) {
         let remainingTime = localStorage.getItem("expiry") - Date.now();
         let isExpired = remainingTime > 0 ? false : true;
-        console.log("remaining milliseconds", remainingTime, isExpired);
+     //   console.log("remaining milliseconds", remainingTime, isExpired);
         return isExpired;
     }
     else

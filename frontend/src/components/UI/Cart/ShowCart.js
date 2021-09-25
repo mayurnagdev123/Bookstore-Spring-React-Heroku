@@ -37,6 +37,11 @@ function ShowCart(props) {
             showCartItems(function (returnVal, returnData) {
                 if (returnVal) {
                     cartItemsSpring = returnData;
+               if (returnData.length === 0) {
+                        setCartItemsData([]);
+                        setTotalPrice(0);
+                        setLoading(false);
+                    }
                     cartItemsSpring.every(function (book) {
                         let imageLink = book.img_link;
                         let authors = book.author;
