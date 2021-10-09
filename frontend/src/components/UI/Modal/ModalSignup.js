@@ -86,13 +86,13 @@ const ModalSignup = (props) => {
                     <input type="text" className="form-control" id="name" placeholder="Name" required onChange={signupNameChangedHandler} />
                 </div>
                 <div className="form-group">
-                    <input type="email" autoComplete="username" className="form-control" id="email" placeholder="Email" required onChange={signupEmailChangedHandler} />
+                    <input type="email" className="form-control" id="email" placeholder="Email" required onChange={signupEmailChangedHandler} />
                 </div>
                 <div className="form-group">
-                    <input type="password" className="form-control" autoComplete="on" id="password" placeholder="Password" required onChange={signupPasswordChangedHandler} minLength="6" />
+                    <input type="password" className="form-control" id="password" placeholder="Password" required onChange={signupPasswordChangedHandler} minLength="6" />
                 </div>
                 <div className="form-group">
-                    <input type="password" className="form-control" autoComplete="on" id="confirm_password" placeholder="Confirm Password" required onChange={signupConfirmPasswordChangedHandler} minLength="6" />
+                    <input type="password" className="form-control" id="confirm_password" placeholder="Confirm Password" required onChange={signupConfirmPasswordChangedHandler} minLength="6" />
                 </div>
                 <div className="form-group">
                     <button className="btn btn-block" style={{ color: 'white', fontWeight: 'bold', backgroundColor: '#17a288', letterSpacing: '1px' }} >Continue</button>

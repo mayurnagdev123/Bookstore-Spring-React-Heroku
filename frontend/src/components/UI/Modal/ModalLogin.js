@@ -60,10 +60,10 @@ const ModalLogin = (props) => {
                     <label htmlFor="responseLabelLogin" id="responseLabelLogin" style={{ textAlign: 'center', fontSize: '1.3rem', display: 'none' }}></label>
                 </div>
                 <div className="form-group">
-                    <input type="text" className="form-control" autoComplete="username" id="loginUsername" placeholder="Username" onChange={loginUsernameChangedHandler} required />
+                    <input type="text" className="form-control" id="loginUsername" placeholder="Username" onChange={loginUsernameChangedHandler} required />
                 </div>
                 <div className="form-group">
-                    <input type="password" className="form-control" autoComplete="current-password" id="loginPassword" placeholder="Password" onChange={loginPasswordChangedHandler} required />
+                    <input type="password" className="form-control" id="loginPassword" placeholder="Password" onChange={loginPasswordChangedHandler} required />
                 </div>
                 <div className="form-group">
                     <button className="btn btn-block" type="submit" style={{ color: 'white', fontWeight: 'bold', backgroundColor: '#17a288', letterSpacing: '1px' }}>Continue</button>
