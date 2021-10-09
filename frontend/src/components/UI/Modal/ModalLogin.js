@@ -55,15 +55,15 @@ const ModalLogin = (props) => {
             <i className="text-center book_icon_login"></i>
             <div className="text-center loginHeading">Log in to continue</div>
             <h5 className="text-center loginSubHeading">Access our library with a free account</h5>
-            <form style={{ marginTop: '4rem' }} onSubmit={submitLoginFormHandler}>
+            <form style={{ marginTop: '4rem' }} autoComplete="off" onSubmit={submitLoginFormHandler}>
                 <div className="form-group">
                     <label htmlFor="responseLabelLogin" id="responseLabelLogin" style={{ textAlign: 'center', fontSize: '1.3rem', display: 'none' }}></label>
                 </div>
                 <div className="form-group">
-                    <input type="text" className="form-control" id="loginUsername" placeholder="Username" onChange={loginUsernameChangedHandler} required />
+                    <input autoComplete="off" type="text" className="form-control" id="loginUsername" placeholder="Username" onChange={loginUsernameChangedHandler} required />
                 </div>
                 <div className="form-group">
-                    <input type="password" className="form-control" id="loginPassword" placeholder="Password" onChange={loginPasswordChangedHandler} required />
+                    <input autoComplete="off" type="password" className="form-control" id="loginPassword" placeholder="Password" onChange={loginPasswordChangedHandler} required />
                 </div>
                 <div className="form-group">
                     <button className="btn btn-block" type="submit" style={{ color: 'white', fontWeight: 'bold', backgroundColor: '#17a288', letterSpacing: '1px' }}>Continue</button>

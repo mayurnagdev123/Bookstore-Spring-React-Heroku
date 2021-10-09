@@ -75,24 +75,24 @@ const ModalSignup = (props) => {
             <i className="text-center book_icon_login"></i>
             <div className="text-center loginHeading">Sign Up to proceed</div>
             <h5 className="text-center loginSubHeading">Access our library with a free account</h5>
-            <form className="modalSignupMargin" onSubmit={submitSignupForm}>
+            <form className="modalSignupMargin" onSubmit={submitSignupForm} autoComplete="off">
                 <div className="form-group">
                     <label htmlFor="responseLabel" id="responseLabel" style={{ textAlign: 'center', fontSize: '1.3rem', display: 'none' }}></label>
                 </div>
                 <div className="form-group">
-                    <input type="text" className="form-control" id="username" placeholder="Choose a username" required onChange={signupUsernameChangedHandler} />
+                    <input type="text" autoComplete="off" className="form-control" id="username" placeholder="Choose a username" required onChange={signupUsernameChangedHandler} />
                 </div>
                 <div className="form-group">
-                    <input type="text" className="form-control" id="name" placeholder="Name" required onChange={signupNameChangedHandler} />
+                    <input type="text" autoComplete="off" className="form-control" id="name" placeholder="Name" required onChange={signupNameChangedHandler} />
                 </div>
                 <div className="form-group">
-                    <input type="email" className="form-control" id="email" placeholder="Email" required onChange={signupEmailChangedHandler} />
+                    <input type="email" autoComplete="off" className="form-control" id="email" placeholder="Email" required onChange={signupEmailChangedHandler} />
                 </div>
                 <div className="form-group">
-                    <input type="password" className="form-control" id="password" placeholder="Password" required onChange={signupPasswordChangedHandler} minLength="6" />
+                    <input type="password" autoComplete="off" className="form-control" id="password" placeholder="Password" required onChange={signupPasswordChangedHandler} minLength="6" />
                 </div>
                 <div className="form-group">
-                    <input type="password" className="form-control" id="confirm_password" placeholder="Confirm Password" required onChange={signupConfirmPasswordChangedHandler} minLength="6" />
+                    <input type="password" autoComplete="off" className="form-control" id="confirm_password" placeholder="Confirm Password" required onChange={signupConfirmPasswordChangedHandler} minLength="6" />
                 </div>
                 <div className="form-group">
                     <button className="btn btn-block" style={{ color: 'white', fontWeight: 'bold', backgroundColor: '#17a288', letterSpacing: '1px' }} >Continue</button>
